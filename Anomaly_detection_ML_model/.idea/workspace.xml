@@ -43,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/bouma/Desktop/LCE/LCE2_SE-IOT/PycharmProjects/tp1",
+    "last_opened_file_path": "C:/Users/bouma/Desktop/SmartShield/Anomaly_detection_ML_model",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,6 +109,7 @@
       <workItem from="1731246223709" duration="4712000" />
       <workItem from="1731256448424" duration="1966000" />
       <workItem from="1731259356406" duration="2329000" />
+      <workItem from="1731264698535" duration="5904000" />
     </task>
     <task id="LOCAL-00001" summary="train the model and run it">
       <option name="closed" value="true" />
@@ -141,6 +142,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autoenconder$run_model.coverage" NAME="run_model Coverage Results" MODIFIED="1731015758671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/inference" />
+    <SUITE FILE_PATH="coverage/Anomaly_detection_ML_model$run_model.coverage" NAME="run_model Coverage Results" MODIFIED="1731267075617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/inference" />
     <SUITE FILE_PATH="coverage/Anomaly_derection_ML_model$run_model.coverage" NAME="run_model Coverage Results" MODIFIED="1731259545013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/inference" />
   </component>
 </project>

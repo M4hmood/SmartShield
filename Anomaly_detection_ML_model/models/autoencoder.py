@@ -175,7 +175,7 @@ query = {
     }
 }
 # Generate the index name with the current date
-index_name = f"wazuh-alerts-{datetime.now().strftime('%Y.%m.7')}"
+index_name = f"security-auditlog-{datetime.now().strftime('%Y.%m.%d')}"
 
 response = client.search(index=index_name, body=query)
 data = [hit["_source"] for hit in response['hits']['hits']]
