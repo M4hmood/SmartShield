@@ -1,0 +1,7 @@
+http.host: "0.0.0.0"
+xpack.monitoring.enabled: false
+xpack.monitoring.elasticsearch.hosts: [ "http://opensearch-node1:9200" ]
+log.level: debug
+# xpack.monitoring.elasticsearch.ssl.certificate_authority: "/usr/share/logstash/opensearch-certs/root-ca.pem"  # Path to OpenSearch CA
+# xpack.monitoring.elasticsearch.ssl.certificate: "/usr/share/logstash/opensearch-certs/root-ca.pem"  # Path to client cert
+# xpack.monitoring.elasticsearch.ssl.key: "/usr/share/logstash/opensearch-certs/client.key"  # Path to client key

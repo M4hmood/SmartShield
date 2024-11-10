@@ -1,0 +1,21 @@
+version: '3'  # Optional, remove if not needed
+
+services:
+  filebeat:
+    image: docker.elastic.co/beats/filebeat:8.15.3  # Adjust version as needed
+    container_name: filebeat
+    user: root  # Required to access certain directories and files on the host
+    volumes:
+      - ./filebeat.yml:/usr/share/filebeat/filebeat.yml  # Mount the Filebeat config
+      - //var/lib/docker/containers:/var/lib/docker/containers:ro  # Access Docker logs
+      - //var/run/docker.sock:/var/run/docker.sock:ro  # Required for Docker metadata
+    environment:
+      - LOGSTASH_HOST=logstash  # Name of the Logstash service in the same Docker network
+      - LOGSTASH_PORT=5044      # Port configured in Logstash for beats input
+    command: ["/bin/sh", "-c", "chmod go-w /usr/share/filebeat/filebeat.yml && /usr/local/bin/docker-entrypoint -e"]
+    networks:
+      - logstash_default          # Network that includes Logstash service
+
+networks:
+  logstash_default:
+    external: true  # Connects to an existing Docker network (e.g., created by Logstash)

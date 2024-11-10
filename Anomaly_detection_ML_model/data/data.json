@@ -1,0 +1,50 @@
+{
+  "numeric_data": [1, 2, 3, 4, 5, 6.78, 9.10, 11.12, 13.14],
+  "string_data": ["apple", "banana", "cherry", "date", "elderberry"],
+  "mixed_data": [
+    {"id": 1, "name": "Alice", "scores": [85, 90, 78], "active": true},
+    {"id": 2, "name": "Bob", "scores": [88, 94, 81], "active": false},
+    {"id": 3, "name": "Charlie", "scores": [92, 89, 84], "active": true}
+  ],
+  "nested_data": {
+    "level1": {
+      "level2": {
+        "level3": {
+          "numbers": [100, 200, 300],
+          "text": "Deeply nested text"
+        }
+      }
+    }
+  },
+  "boolean_data": [true, false, true, false],
+  "complex_numbers": [
+    {"real": 1, "imaginary": 2},
+    {"real": 3, "imaginary": 4},
+    {"real": 5, "imaginary": 6}
+  ],
+  "dates": [
+    "2024-11-07T12:00:00Z",
+    "2023-05-18T15:30:00Z",
+    "2022-09-25T09:45:00Z"
+  ],
+  "array_of_arrays": [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ],
+  "varied_objects": [
+    {"type": "person", "name": "Eve", "age": 30},
+    {"type": "animal", "species": "cat", "age": 4},
+    {"type": "vehicle", "model": "sedan", "year": 2020}
+  ],
+   "image_data": [
+        "C:/Users/boual/OneDrive/Pictures/Screenshots/Screenshot 2024-11-07 224020.png",
+        "C:/Users/boual/OneDrive/Pictures/Screenshots/Screenshot 2024-11-07 213058.png",
+        "C:/Users/boual/OneDrive/Pictures/Screenshots/Screenshot 2024-11-05 134445.png"
+    ],
+    "url_data": [
+        "https://github.com/CASANOVA660/Anomaly_derection_ML_model/blob/master/utils/data_loader.py",
+        "https://192.168.240.141/app/login?",
+        "https://casanova660.github.io/portfolio/?fbclid=IwY2xjawF54DRleHRuA2FlbQIxMAABHeCj4WeBsGSG9bBMMuZ00yT4oVtqOdgYOMVllkwuxyu-UbgTzei83AdT0Q_aem_hJhuO3bzE66OfBLiQYd2pA"
+    ]
+}

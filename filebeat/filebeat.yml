@@ -1,0 +1,14 @@
+filebeat.inputs:
+  - type: container
+    paths:
+      - /var/lib/docker/containers/*/*.log # Docker internal path to container logs
+    # json.message_key: log
+    processors:
+      - add_docker_metadata: ~
+      - add_host_metadata: ~
+
+output.logstash:
+  hosts: ["${LOGSTASH_HOST}:${LOGSTASH_PORT}"]
+
+# Optional logging level (useful for debugging)
+logging.level: info
