@@ -9,4 +9,4 @@ RUN rm -f /usr/share/logstash/pipeline/logstash.conf
 
 # Copy custom pipeline and config files
 COPY pipeline/ /usr/share/logstash/pipeline/
-COPY config/ /usr/share/logstash/config/
+COPY settings/logstash.yml /usr/share/logstash/config/logstash.yml
