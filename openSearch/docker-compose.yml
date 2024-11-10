@@ -59,7 +59,7 @@ services:
     environment:
       OPENSEARCH_HOSTS: '["http://opensearch-node1:9200","http://opensearch-node2:9200"]' # '["https://opensearch-node1:9200","https://opensearch-node2:9200"]' (for production purpose)
     volumes:
-      - ./opensearch-dashboards/config/opensearch-dashboard.yml:/usr/share/opensearch-dashboards/config/opensearch_dashboard.yml
+      - ./opensearch-dashboards/config/opensearch-dashboards.yml:/usr/share/opensearch-dashboards/config/opensearch_dashboards.yml
     networks:
       - opensearch-net
 
